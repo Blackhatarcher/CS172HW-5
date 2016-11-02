@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include <string>
 #include <iostream>
-
 using namespace std;
 
 template<typename T>
@@ -26,21 +25,21 @@ T * sort(T list[], int size) {
 	}
 }
 
-template<typename T>
-bool isSorted(const T list[], int size) {
-	// gonna create a sorted version of the array and then compare the original to the sorted one
-	bool answer = true;
-	T* sorted = new T[size];
-	// memcpy is supposed to copy the contents of 
-	memcpy(sorted, list,sizeOf(sort);
-	for (int i = 0; i < size; i++) {
-		if (list[i] != sorted[i]) {
-			answer = false;
-		}
-	}
-	delete sorted;
-	return answer;
-}
+//template<typename T>
+//bool isSorted(const T list[], int size) {
+//	// gonna create a sorted version of the array and then compare the original to the sorted one
+//	bool answer = true;
+//	T* sorted = new T[size];
+//	// memcpy is supposed to copy the contents of 
+//	memcpy(sorted, list,sizeOf(sort));
+//	for (int i = 0; i < size; i++) {
+//		if (list[i] != sorted[i]) {
+//			answer = false;
+//		}
+//	}
+//	delete sorted;
+//	return answer;
+//}
 
 template<typename T>
 void print(T list[], int listsize) {
@@ -72,24 +71,24 @@ int main()
 		print(array2, DOUBLESIZE);
 		print(array3, STRINGSIZE);
 
-		if (isSorted(array1,INTSIZE)){
-			cout << "Array 1 is sorted" << endl;
-		}
-		else {
-			cout << "Array 1 is not sorted" << endl;
-		}
-		if (isSorted(array2, DOUBLESIZE)) {
-			cout << "Array 2 is sorted" << endl;
-		}
-		else {
-			cout << "Array 2 is not sorted" << endl;
-		}
-		if (isSorted(array3, STRINGSIZE)) {
-			cout << "Array 3 is sorted" << endl;
-		}
-		else {
-			cout << "Array 3 is not sorted" << endl;
-		}
+		//if (isSorted(array1,INTSIZE)){
+		//	cout << "Array 1 is sorted" << endl;
+		//}
+		//else {
+		//	cout << "Array 1 is not sorted" << endl;
+		//}
+		//if (isSorted(array2, DOUBLESIZE)) {
+		//	cout << "Array 2 is sorted" << endl;
+		//}
+		//else {
+		//	cout << "Array 2 is not sorted" << endl;
+		//}
+		//if (isSorted(array3, STRINGSIZE)) {
+		//	cout << "Array 3 is sorted" << endl;
+		//}
+		//else {
+		//	cout << "Array 3 is not sorted" << endl;
+		//}
 
 		cout << "Exit? (y/n)" << endl;
 		string finalanswer = "";
